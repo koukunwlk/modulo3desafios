@@ -1,0 +1,64 @@
+{% extends 'layout.njk' %}
+{% block head %}
+    <title>Cursos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock head %}
+{% block content %}
+    <section class="cards">
+        <div class="card" id="starter">
+            <div class="card_image-container">
+                <img src="/64c237ccff807c054339a62d53b4b402.svg" alt="Curso Starter">
+            </div>
+            <div class="card_content">
+                <h3>Stater</h3>
+            </div>
+            <div class="card_info">
+
+                <p>5 modulos</p>
+                <p class="card_price">Gratis</p>
+            </div>
+        </div>
+        <div class="card" id="launchbase">
+            <div class="card_image-container">
+                <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
+            </div>
+            <div class="card_content">
+                <h3>LaunchBase</h3>
+            </div>
+            <div class="card_info">
+
+                <p>13 modulos</p>
+                <p class="card_price">R$900,00</p>
+            </div>
+        </div>
+        <div class="card" id="gostack">
+            <div class="card_image-container">
+                <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
+            </div>
+            <div class="card_content">
+                <h3>GoStack</h3>
+            </div>
+            <div class="card_info">
+                <p>17 modulos</p>
+                <p class="card_price">R$2000,00</p>
+            </div>
+        </section>
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+                <a class="maximize-modal">
+                    <span class="material-icons">
+                        maximize
+                    </span>
+                </a>
+                <div class="modal-content">
+                    <iframe class="iframepage" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="/scripts.js"></script>
+    {% endblock content %}
