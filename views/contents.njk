@@ -6,43 +6,21 @@
 {% endblock head %}
 {% block content %}
     <section class="cards">
-        <div class="card" id="starter">
+        {% for content in contents %}
+        <div class="card" id="{{content.id}}">
             <div class="card_image-container">
-                <img src="/64c237ccff807c054339a62d53b4b402.svg" alt="Curso Starter">
+                <img src="{{content.logo_url}}" alt="Curso {{content.id}}">
             </div>
             <div class="card_content">
-                <h3>Stater</h3>
+                <h3>{{content.id}}</h3>
             </div>
             <div class="card_info">
 
-                <p>5 modulos</p>
-                <p class="card_price">Gratis</p>
+                <p>Modulos: {{content.modules}}</p>
+                <p class="card_price">{{content.price}}</p>
             </div>
-        </div>
-        <div class="card" id="launchbase">
-            <div class="card_image-container">
-                <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
             </div>
-            <div class="card_content">
-                <h3>LaunchBase</h3>
-            </div>
-            <div class="card_info">
-
-                <p>13 modulos</p>
-                <p class="card_price">R$900,00</p>
-            </div>
-        </div>
-        <div class="card" id="gostack">
-            <div class="card_image-container">
-                <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
-            </div>
-            <div class="card_content">
-                <h3>GoStack</h3>
-            </div>
-            <div class="card_info">
-                <p>17 modulos</p>
-                <p class="card_price">R$2000,00</p>
-            </div>
+        {% endfor %}
         </section>
         <div class="modal-overlay">
             <div class="modal">

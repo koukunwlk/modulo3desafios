@@ -1,5 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const contents = require('./data-contents')
 
 const server = express()
 
@@ -15,7 +16,7 @@ server.get('/', (req, res)=>{
 })
 
 server.get('/contents', (req, res)=>{
-    res.render('contents')
+    res.render('contents', {contents})
 })
 
 server.use((req, res)=>{
