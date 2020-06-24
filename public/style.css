@@ -102,7 +102,6 @@ footer{
     background-color: #7159c1;
     cursor: pointer;
     
-    
 }
 
 .card_image-container img{
@@ -224,11 +223,17 @@ footer{
     margin: 0 auto;
     text-align: center;
     text-transform: capitalize;
-    max-width: 1180px;
+    max-width: 1400px;
 }
 
 .card_content_container{
-    padding-top: 45%;
+    height: 70vh;
+    border-bottom: 1px solid #282a36;
+    margin-top: 3vh;
+}
+iframe{
+    height: 100%;
+    width: 100%;
 }
 /* .card_content{
     padding: 0;
