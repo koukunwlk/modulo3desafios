@@ -217,3 +217,40 @@ footer{
     text-decoration: none;
     line-height: 46px;
 }
+
+/* CARD CONTENT */
+
+.content{
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 1180px;
+}
+
+.card_content_container{
+    padding-top: 45%;
+}
+/* .card_content{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90vh;
+    margin: 0 auto;
+    position: relative;
+}
+.card_content h1{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 8px;
+}
+
+.card_content h3{
+    padding-left: 24px;
+}
+
+.card_content_container{
+   width: 90vw;
+   padding-top: 50%;
+   position: absolute;
+} */
